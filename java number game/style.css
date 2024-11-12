@@ -1,0 +1,146 @@
+/* Reset some default styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #3a1c71;
+  margin-bottom: 10px;
+}
+
+.settings {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #666;
+}
+
+select {
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+}
+
+.instructions {
+  font-size: 14px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.guess-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #3a1c71;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:nth-child(2) {
+  background-color: #3a1c71;
+}
+
+button:nth-child(3) {
+  background-color: #d76d77;
+}
+
+.result {
+  font-size: 18px;
+  color: #3a1c71;
+  margin-top: 15px;
+  font-weight: bold;
+  min-height: 30px;
+  transition: color 0.3s ease;
+}
+
+.result.correct {
+  color: green;
+}
+
+.result.wrong {
+  color: red;
+}
+
+.scoreboard {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.scoreboard h2 {
+  color: #3a1c71;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.scoreboard p {
+  margin: 5px 0;
+  color: #333;
+}
+
+span {
+  font-weight: bold;
+  color: #3a1c71;
+}
